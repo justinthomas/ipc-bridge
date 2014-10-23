@@ -12,12 +12,14 @@ This will vary based on your system, install path, etc.
 
 ### Installing IPC
 
-* My discovred dependencies for IPC 3.9.1:
+* My discovered dependencies for IPC 3.9.1:
 bison: one or more of (bison, bisonc++, libbison-dev)
 flex
 liballegro
 common-lisp-controller
 cl-quicklisp
+
+NOTE (as of 10/23/14): There's a bug in bison and libbison-dev 3 that causes IPC to not compile. Instead, download bison/libbison-dev 2.7.1 ( http://askubuntu.com/questions/444982/install-bison-2-7-in-ubuntu-14-04 )
 
 
 * Follow the instructions at http://bolt-haptics.seas.upenn.edu/index.php/Software/Matlab-ROS-IPC-Bridge
