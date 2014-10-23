@@ -40,28 +40,36 @@ In the following lines, replace the # signs with the appropriate numbers:
 
 ### Installing ipc-bridge
 
-
+(Substitute your Matlab path inside the export)
 
 1. Exporting Mex File Path 
-#substitute your Matlab path inside the export
 echo "export MEX=/usr/local/MATLAB/2014a/bin/mex" >> ~/.bashrc
+
 source ~/.bashrc
 
 2. 
 *To compile the Mex files, you need to place symlinks in /usr/local/bin/ to matlab, mbuild, mcc, mex, mexext which can be found in the bin directory of your MATLAB path
 
 sudo cp /usr/local/MATLAB/2014a/bin/matlab /usr/local/bin
+
 sudo cp /usr/local/MATLAB/2014a/bin/mbuild /usr/local/bin
+
 ...
+
 etc.
 
 3. Installing IPC Bridge - 
 rosmake ipc_bridge_ros
 
 roscd ipc_rosgraph_msgs && make
+
 roscd ipc_std_msgs && make
+
 roscd ipc_geometry_msgs && make
+
 roscd ipc_nav_msgs && make
+
 roscd ipc_sensor_msgs && make 
+
 
 
